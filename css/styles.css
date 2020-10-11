@@ -1,0 +1,164 @@
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title {
+    font-size: xx-large;
+    text-shadow: white -1px 1px;
+}
+
+.gradient-bg {
+    position: relative;
+    padding: 20px 0;
+    /* fallback for old browsers */
+    background: #BE93C5;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(90deg, #7BC6CC, #BE93C5);
+    background: linear-gradient(90deg, #7BC6CC, #BE93C5);
+}
+
+#online-centered {
+    text-align: center;
+    padding: 8px;
+}
+
+.icon {
+    padding: 8px 10px;
+    margin: 10px 10px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.icon:hover {
+    filter: brightness(60%);
+}
+
+#scores {
+    display: inline-block;
+}
+
+.score-text {
+    padding: 8px 8px;
+    display: inline;
+}
+
+#left {
+    text-align: center;
+    float: left;
+    padding: 30px 20px;
+    margin-right: 20%;
+}
+
+#right {
+    text-align: center;
+    float: right;
+    padding: 30px 20px;
+    margin-left: 20%;
+}
+
+.score-img {
+    width: 200px;
+    height: 200px;
+    padding: 20px 20px;
+    margin: auto;
+    
+}
+
+.caption {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.play-text {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    text-align: center;
+    text-shadow: royalblue 2px 2px;
+}
+
+.result-text {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 50px;
+    visibility: hidden;
+}
+
+.win-text {
+    text-shadow: blue 1px 1px;
+}
+
+.lose-text {
+    text-shadow: red 1px 1px;
+}
+
+#vs {
+    visibility: hidden;
+}
+
+.play-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+
+
+
+.img__wrap {
+    position: relative;
+
+}
+
+.img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .5s;
+}
+
+.img__wrap:hover .img__description  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__wrap:hover .img__description_bottom  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__description_bottom {
+    position: absolute;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .8s, visibility .9s;
+
+}

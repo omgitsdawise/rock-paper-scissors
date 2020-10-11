@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="icon" href="assets/rock.png">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" /> -->
+
+</head>
+
+<body class="gradient-bg">
+
+    <main id="main">
+
+        <section class="center">
+
+            <h1 class="page-title">
+                ROCK PAPER SCISSORS <br>
+                <div id="online-centered">online<div>
+            </h1>
+
+        </section>
+
+
+        <section class="center">
+
+            <div id="left">
+                <div class="img__wrap">
+                    <img class="img__img score-img" src="assets/player.png" />
+                    <p class="img__description">Well, this is you</p>
+                </div>
+
+                <h3 id="player-score" class="score-text caption">Your Score: 0</h3>
+            </div>
+
+            <div class="center-grid">
+                <div class="center">
+                    <img id="player-choice" class="play-icon">
+
+                    <h2 id="vs" class="play-text">VS</h2>
+
+                    <img id="computer-choice" class="play-icon">
+                </div>
+
+                <h3 id="result-text" class="result-text"></h3>
+            </div>
+
+            <div id="right">
+                <div class="img__wrap">
+                    <img class="img__img score-img" src="assets/robot.png" />
+                    <p class="img__description">This is the ultimate player!</p>
+                </div>
+                <h3 id="computer-score" class="score-text caption">Computer Score: 0</h3>
+            </div>
+
+        </section>
+
+
+        <hr>
+
+        <section class="center bottom">
+
+            <div class="img__wrap">
+                <img class=" icon" src="assets/rock.png" onClick="choose('rock')" role="button">
+                <p class="img__description_bottom">Let's rock!</p>
+            </div>
+
+            <div class="img__wrap">
+                <img class=" icon" src="assets/paper.png" onClick="choose('paper')" role="button">
+                <p class="img__description_bottom">This is The Dunder Mifflin Paper Company</p>
+            </div>
+
+            <div class="img__wrap">
+                <img class=" icon" src="assets/scissors.png" onClick="choose('scissors')" role="button">
+                <p class="img__description_bottom">Yep, this is what I would choose</p>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+<footer>
+
+</footer>
+
+</html>
